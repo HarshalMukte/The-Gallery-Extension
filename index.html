@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fonst awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="displayImg">
+        <img src="#" alt="image"/>
+        <span class="download"><i class="fas fa-download"></i></span>
+        <span class="userProfile">Photo by <a href="#" class="photographerDetails" target="_blank"> Annie Spratt </a> on <a href="https://unsplash.com/?utm_source=TheGallery&utm_medium=referral" target="_blank"> Unsplash </a></span>
+    </div>
+
+   <div class="wrapper">
+    <header>
+        <div class="container">
+         <nav>
+             <h2><img src="logo.png" alt="logo">The <span> Gallery</span></h2>
+             <div class="search-box">
+                 <input type="text" placeholder="Search..." id="input">
+                 <i class="fas fa-search active" id="search"></i>
+                 <i class="fas fa-times" id="cross"></i>
+             </div>
+         </nav>
+        </div>
+     </header>
+     <div class="content_container">
+         <div class="grid">
+             <span class="loading"><img src="loading.gif" alt="loading"></span>
+             <span id="NoDataMessage"><img src="not-found.webp" alt="no-data-message"></span>
+             <span id="upBtn"><i class="fas fa-angle-up"></i></span>
+             <p id="error_message"><img src="serverDown.gif" alt="serverDown"> Server Down!!</p>
+             <div class="column column1"></div>
+             <div class="column column2"></div>
+         </div>
+     </div>
+     
+     <p class="wish">-Created With 💙 by <a href="https://harshal-mukte.netlify.app/" target="_blank">HARSHAL MUKTE</a></p>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
